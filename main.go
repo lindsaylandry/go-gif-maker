@@ -41,8 +41,8 @@ func main() {
 			return
 		}
 
-		q := median.Quantizer(c.Colors)
-		cp := q.Quantize(make(color.Palette, 0, c.Colors), img)
+		q := median.Quantizer(256)
+		cp := q.Quantize(make(color.Palette, 0, 256), img)
 
 		// 3. Convert image.Image to *image.Paletted
 		bounds := img.Bounds()
