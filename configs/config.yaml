@@ -1,0 +1,6 @@
+path: "./examples"
+input_files:
+  - "example1.png"
+  - "example2.png"
+  - "example3.png"
+output_file: "examples.gif"
