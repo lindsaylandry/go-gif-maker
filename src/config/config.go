@@ -8,7 +8,8 @@ import (
 type Config struct {
 	Path string `yaml:"path"`
 	InputFiles []string `yaml:"input_files"`
-	OutputFiles string `yaml:"output_files"`
+	OutputFile string `yaml:"output_file"`
+	DelaySeconds int `yaml:"delay_seconds"`
 }
 
 func NewConfig() (*Config, error) {
